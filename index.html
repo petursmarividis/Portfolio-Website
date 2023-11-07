@@ -7,18 +7,28 @@
     <title>Petur's Portfolio</title>
     <link rel="stylesheet" href="Recources/reset.css">
     <link rel="stylesheet" href="Recources/style.css">
-    <script src="Recources/toggle.js"></script>
+    <script type="text/javascript" src="Recources/toggle.js" defer></script>
 </head>
 <body>
-    <nav id="index-navigation" class="desktop">
+    <!-- Desktop Navigation -->
+    <nav class="navbar" class="desktop">
         <img src="Recources/Images/navigation-background.svg" alt="navigation-background" id="navigation-background">
         <ul id="nav-list">
-            <li class="nav-link" id="nav-skill-set"><a href="#skill-section">Skill-Set</a></li>
-            <li class="nav-link"id="nav-contact"><a href="contact.html">Contact</a></li>
-            <li class="nav-link" id="nav-logo"><a href="index.html"><img src="Recources/Images/Personal-Logo-White.png" alt="logo" ></a></li>
-            <li class="nav-link"><a href="#" id="nav-about">About</a></li>
-            <li class="nav-link" id="nav-project"><a href="#projects-section">Projects</a></li>
+            <li class="nav-item" id="nav-skill-set"><a href="#skill-section" class="nav-link">Skill-Set</a></li>
+            <li class="nav-item"id="nav-contact"><a href="contact.html" class="nav-link">Contact</a></li>
+            <a href="index.html"><img src="Recources/Images/Personal-Logo-White.png" alt="logo" class="desktop" id="desktop-nav-logo"></a></li>
+            <li class="nav-item"><a href="#" id="nav-about" class="nav-link">About</a></li>
+            <li class="nav-item" id="nav-project"><a href="#projects-section" class="nav-link">Projects</a></li>
         </ul>
+    </nav>
+    <!-- Mobile Navigation -->
+    <nav class="navbar" class="mobile">
+        <a href="index.html" id="mobile-nav-logo"><img src="Recources/Images/Personal-Logo-White.png" alt="logo" class="mobile"></a>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
     <main>
         <header>
@@ -96,10 +106,9 @@
                 </div>
             </div>
         </section>
-        
-        <footer>
-            <img src="Recources/Images/Personal-Logo-White.png" alt="logo">
-        </footer>
-    </main>
+    </main>  
+    <footer>
+         <img src="Recources/Images/Personal-Logo-White.png" alt="logo">
+    </footer>
 </body>
 </html>

@@ -1,13 +1,18 @@
-// const toggleList = document.getElementsByClassName{ 'toggle-list' };
+const hamburger = document.querySelector(".hamburger")
+const navMenu = document.querySelector("#nav-list")
 
-// for (let i = 0; i < toggleList.length; i++) {
-//     toggleList[i].addEventListener("click", toggle)
-// }
+hamburger.addEventListener("click", mobileMenu);
 
-const toggleHeader = document.getElementById{ 'nav-skill-set'}
+function mobileMenu() {
+    hamburger.classList.toggle("active")
+    navMenu.classList.toggle("active")
+}
 
-toggleHeader.addEventListener("click", toggle)
+const navLink = document.querySelectorAll(".nav-link");
 
-function toggle() {
-    this.classList.toggle("toggle-list")
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active")
+    navMenu.classList.remove("active")
 }
