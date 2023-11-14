@@ -4,26 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petur's Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="Recources/reset.css">
     <link rel="stylesheet" href="Recources/style.css">
-    <script type="text/javascript" src="Recources/toggle.js" defer></script>
+    <script src="Recources/toggle.js" defer></script>
 </head>
 <body>
-    <!-- Desktop Navigation -->
-    <nav class="navbar" class="desktop">
-        <img src="Recources/Images/navigation-background.svg" alt="navigation-background" id="navigation-background">
+    <nav>
+        <a href="index.html" class="mobile"><img src="Recources/Images/Personal-Logo-White-Bold.png" alt=""></a>
         <ul id="nav-list">
-            <li class="nav-item" id="nav-skill-set"><a href="#skill-section" class="nav-link">Skill-Set</a></li>
-            <li class="nav-item"id="nav-contact"><a href="contact.html" class="nav-link">Contact</a></li>
-            <a href="index.html"><img src="Recources/Images/Personal-Logo-White.png" alt="logo" class="desktop" id="desktop-nav-logo"></a></li>
-            <li class="nav-item"><a href="#" id="nav-about" class="nav-link">About</a></li>
-            <li class="nav-item" id="nav-project"><a href="#projects-section" class="nav-link">Projects</a></li>
+            <li class="desktop"><a href="index.html"><img src="Recources/Images/Personal-Logo-White-Bold.svg" alt="logo"></a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+            <li class="nav-item"><a href="#about-me" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link" id="contact">Contact Me</a></li>
         </ul>
-    </nav>
-    <!-- Mobile Navigation -->
-    <nav class="navbar" class="mobile">
-        <a href="index.html" id="mobile-nav-logo"><img src="Recources/Images/Personal-Logo-White.png" alt="logo" class="mobile"></a>
         <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -31,84 +26,116 @@
         </div>
     </nav>
     <main>
-        <header>
-            <div id="introduction">
-                <h1>Pétur Smári Víðisson</h1>
-                <h2>Front-End Developer</h2>
-                <a href="contact.html"><button type="button">Get In Touch</button></a>
+        <header id="introduction">
+            <div id="name">
+                <h1>Petur Vidisson</h1>
             </div>
-            <div id="divider"></div>
-            <p id="welcome">Welcome to my personal website portfolio, where I craft digital experiences that stand out. I specialize in web development, turning your ideas into stunning, user-friendly websites. Whether you need a sleek corporate site, a dynamic e-commerce platform, or a custom web application, I'm here to make it happen. Elevate your online presence.</p>
+            <h2>Website Developer</h2>
+            <p>Hey! Welcome to my personal portfolio, I'm a web developer from Iceland. Please feel free to explore my work, and if you're interested in collaborating or have any inquiries, don't hesitate to get in touch. Let's turn your web vision into a reality!</p>
         </header>
-
-        <!-- Development Process -->
-        <section id="development-process-section">
+        <section id="schoolandfocus">
+            <div id="codecademy" class="white-card">
+                <div class="img-container"><img src="Recources/Images/codecademy-logo-vector.svg" alt="codecademy-logo"></div>
+                <p>I've been learning web development at Codecademy.com which is a fantastic place to learn programming in your free time.</p>
+            </div>
+            <div id="focus">
+                <div id="close-work" class="white-card">
+                    <img src="Recources/Images/Icons/LineSegments-r.svg" alt="">
+                    <p>I will work closely with you and your team to make sure your vision comes to life.</p>
+                </div>
+                <div id="contact-whenever" class="white-card">
+                    <img src="Recources/Images/Icons/Chats-r.svg" alt="">
+                    <p>Contact me whenever you want. You will always be able to get in touch.</p>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div id="specalize">
+                <h2>I specialize in UI/UX design to give your website a practical edge. It's not just about looks; it's about making your site work effortlessly for your audience</h2>
+            </div>
+            <div class="black-card" id="existing-website">
+                <p>Have an already existing website you want you refurbish?</p>
+                <img src="Recources/Images/Icons/Recycle-r-White.svg" alt="Recycle">
+            </div>
+            <div class="black-card" id="new-website">
+                <img src="Recources/Images/Icons/PencilLine-r-white.svg" alt="PencilLine">
+                <p>Do you need a website to expand your business or personal brand?</p>
+            </div>
+        </section>
+        <section id="development">
             <h2>Development Process</h2>
             <div id="development-process">
-                <div class="dev-image-container" id="user-research">
-                    <img src="Recources/Images/Icons/user research.svg" alt="user-research-icon" class="dev-image">
-                    <figcaption><strong>User Research</strong> <br>What does a user want when they visit your site?</figcaption>
+                <div class="development-card" id="user-research">
+                    <div class="img-container"><img src="Recources/Images/Icons/user-research.svg" alt="user-research"></div>
+                    <h3>User Research</h3>
+                    <p class="black-card">Knowing what your users are looking for is key for making a good website.</p>
                 </div>
-                <div class="dev-image-container" id="prototyping">
-                    <img src="Recources/Images/Icons/prototyping.svg" alt="prototyping-icon" class="dev-image">
-                    <figcaption><strong>Prototyping</strong><br>Make a wireframe to layout your site.</figcaption>
+                <div class="development-card" id="prototyping">
+                    <div class="img-container"><img src="Recources/Images/Icons/prototyping.svg" alt="prototyping"></div>
+                    <h3>Prototyping</h3>
+                    <p class="black-card">Making a prototype of your website makes it much easier to make design choises.</p>
                 </div>
-                <div class="dev-image-container" id="ui">
-                    <img src="Recources/Images/Icons/ui.svg" alt="user-interface-icon" class="dev-image">
-                    <figcaption><strong>User Interface</strong><br>A good user interface benefits both you and the user.</figcaption>
+                <div class="development-card" id="ux-ui">
+                    <div class="img-container"><img src="Recources/Images/Icons/ui.svg" alt="UI/UX"></div>
+                    <h3>UX/UI</h3>
+                    <p class="black-card">The User Experience is our main focus. A good user experience is a win - win situation.</p>
                 </div>
-                <div class="dev-image-container" id="motion">
-                    <img src="Recources/Images/Icons/motion.svg" alt="motion-icon" class="dev-image">
-                    <figcaption><strong>Add Interactivity</strong><br>Adding interactive elements to your page makes the whole experience better.</figcaption>
+                <div class="development-card" id="program-pages">
+                    <div class="img-container"><img src="Recources/Images/Icons/landing-page.svg" alt="program pages"></div>
+                    <h3>Program Pages</h3>
+                    <p class="black-card">After you are feeling confident with how your website is turning out it's time to make the website.</p>
                 </div>
-                <div class="dev-image-container" id="landing-page">
-                    <img src="Recources/Images/Icons/landing-page.svg" alt="landing-page-icon" class="dev-image">
-                    <figcaption><strong>Release The First Edition</strong> <br>User testing and fixing any flaws. </figcaption>
+                <div class="development-card" id="add-interactivity">
+                    <div class="img-container"><img src="Recources/Images/Icons/motion.svg" alt="interactivity"></div>
+                    <h3>Add Interactivity</h3>
+                    <p class="black-card">Interactive websites are a joy to scroll through and helps with keeping your users focus.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Project Section -->
-        <section id="projects-section">
-            <h2>My Projects</h2>
-            <div id="projects">
-                <div class="project-card" id="clov-air">
-                    <a href="#"><img src="Recources/Images/Clov-Air-Flight-Club-Thumbnail.jpeg" alt="Clov-Air Flight Club Thumbnail"></a>
-                </div>
-                <div class="project-card" id="fotomatic">
-                    <a href="#"><img src="Recources/Images/Fotomatic-Thumbnail.jpeg" alt="Fotomatic-Thumbnail"></a>
-                </div>
-                <div class="project-card" id="tea-cozy">
-                    <a href="#"><img src="Recources/Images/TeaCozy-Thumbnail.jpeg" alt="TeaCozy-Thumbnail"></a>
+                <div class="development-card" id="user-testing">
+                    <div class="img-container"><img src="Recources/Images/Icons/user-testing.svg" alt="user-testing"></div>
+                    <h3>User Testing</h3>
+                    <p class="black-card">After releasing the website we can have a look at how it has impacted your business.</p>
                 </div>
             </div>
         </section>
-        
-        <!-- Skill Section -->
-        <section id="skill-section">
-            <h2>Skill-Set</h2>
-            <div id="skill-card-container">
-                <div class="skill-card" id="html-card">
-                    <img src="Recources/Images/Icons/html5-orange.svg" alt="html5 icon">
-                    <p>HTML 5</p>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div id="project-card-container">
+                <div class="project-card" id="clovair">
+                    <img src="Recources/Images/Project Setups/Clov-Air Mockup Portrait.png" alt="">
                 </div>
-                <div class="skill-card" id="css-card">
-                    <img src="Recources/Images/Icons/css3-orange.svg" alt="css3 icon">
-                    <p>CSS 3</p>
-                </div>
-                <div class="skill-card" id="javascript-card">
-                    <img src="Recources/Images/Icons/javascript-orange.svg" alt="javascript icon">
-                    <p>JavaScript</p>
-                </div>
-                <div class="skill-card" id="github-card">
-                    <img src="Recources/Images/Icons/github-orange.svg" alt="github icon">
-                    <p>GitHub</p>
+                <div class="project-card" id="luhns-algorithm">
+                    <img src="Recources/Images/Project Setups/Luhn's Algorithm Portrait.png" alt="">
                 </div>
             </div>
         </section>
-    </main>  
-    <footer>
-         <img src="Recources/Images/Personal-Logo-White.png" alt="logo">
-    </footer>
+        <section id="about-me">
+            <h2>About Me!</h2>
+            <div id="about-me-content">
+                <div class="text-field">
+                    <p>My full name is Pétur Smári Víðisson and I'm 22 years old from a small island in the North Atlantic Ocean named Iceland. I am a Private Pilot and am currently studying for my Commercial Pilot License.</p>
+                    <p>I love traveling, which fortunately pairs perfectly with my other passion for flying, and in 2023 I traveled for 4 months in South-East Asia. </p>
+                    <p>Music is one of my passions as well, I've been playing guitar since I was 5 years old and played in a few bands and recorded 1 album. </p>
+                    <p>I've always had an interest in Graphic Design but only recently started exploring that field. But so far I'm loving it!</p>
+                </div>
+                <div class="img-container">
+                    <img id="personal-photo" src="Recources/Images/Photot-signature.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="contact-section">
+            <h2>Get In Touch!</h2>
+            <div class="contact-info">
+                <img src="Recources/Images/Icons/envelope.svg" alt="email">
+                <p>petursmarividis@gmail.com</p>
+            </div>
+            <div class="contact-info">
+                <img src="Recources/Images/Icons/telephone.svg" alt="email">
+                <p>(354) 680-8021</p>
+            </div>
+        </section>
+        <footer>
+            <img src="Recources/Images/Personal-Logo-White-Bold.svg" alt="">
+        </footer>
+    </main>
 </body>
 </html>
